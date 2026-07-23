@@ -1,0 +1,138 @@
+export interface Company {
+  id: string;
+  name: string;
+  logo: string;
+  tier: 'faang' | 'big-tech' | 'growth' | 'startup';
+  description: string;
+  questionCount: number;
+  commonTopics: string[];
+}
+
+export const companies: Company[] = [
+  {
+    id: 'google',
+    name: 'Google',
+    logo: '🔵',
+    tier: 'faang',
+    description: 'Search, cloud, AI/ML, and consumer technology. Known for algorithm-heavy interviews with emphasis on data structures, system design, and coding.',
+    questionCount: 25,
+    commonTopics: ['System Design', 'Algorithms', 'Data Structures', 'Dynamic Programming'],
+  },
+  {
+    id: 'meta',
+    name: 'Meta',
+    logo: '🔵',
+    tier: 'faang',
+    description: 'Social networking, VR/AR, and advertising technology. Interviews focus on coding, system design, and product sense.',
+    questionCount: 22,
+    commonTopics: ['System Design', 'Coding', 'Data Structures', 'Product Sense'],
+  },
+  {
+    id: 'amazon',
+    name: 'Amazon',
+    logo: '📦',
+    tier: 'faang',
+    description: 'E-commerce, cloud computing (AWS), and logistics. Leadership Principles are evaluated alongside technical skills.',
+    questionCount: 20,
+    commonTopics: ['Leadership Principles', 'System Design', 'Data Structures', 'OOP Design'],
+  },
+  {
+    id: 'apple',
+    name: 'Apple',
+    logo: '🍎',
+    tier: 'faang',
+    description: 'Consumer hardware, software, and services. Interviews emphasize deep technical knowledge and attention to detail.',
+    questionCount: 18,
+    commonTopics: ['System Design', 'Low-Level Programming', 'Algorithms', 'Concurrency'],
+  },
+  {
+    id: 'netflix',
+    name: 'Netflix',
+    logo: '🎬',
+    tier: 'faang',
+    description: 'Streaming entertainment, content production, and cloud infrastructure. High bar for senior engineers with focus on architecture.',
+    questionCount: 15,
+    commonTopics: ['System Design', 'Architecture', 'Scalability', 'Streaming Systems'],
+  },
+  {
+    id: 'microsoft',
+    name: 'Microsoft',
+    logo: '🟦',
+    tier: 'big-tech',
+    description: 'Productivity software, cloud (Azure), gaming (Xbox), and developer tools. Structured interview process with clear leveling.',
+    questionCount: 20,
+    commonTopics: ['Data Structures', 'System Design', 'OOP Design', 'Problem Solving'],
+  },
+  {
+    id: 'vercel',
+    name: 'Vercel',
+    logo: '▲',
+    tier: 'growth',
+    description: 'Frontend cloud platform, Next.js creators, and deployment infrastructure. Strong focus on React, Next.js, and web performance.',
+    questionCount: 12,
+    commonTopics: ['React', 'Next.js', 'Web Performance', 'Frontend Architecture'],
+  },
+  {
+    id: 'shopify',
+    name: 'Shopify',
+    logo: '🛍️',
+    tier: 'growth',
+    description: 'E-commerce platform powering millions of merchants. Ruby on Rails, GraphQL, and scalable commerce systems.',
+    questionCount: 14,
+    commonTopics: ['System Design', 'E-Commerce', 'Ruby on Rails', 'GraphQL'],
+  },
+  {
+    id: 'cloudflare',
+    name: 'Cloudflare',
+    logo: '☁️',
+    tier: 'growth',
+    description: 'Internet security, CDN, and edge computing. Deep networking knowledge and distributed systems expertise valued.',
+    questionCount: 12,
+    commonTopics: ['Networking', 'CDN', 'Security', 'Distributed Systems'],
+  },
+  {
+    id: 'stripe',
+    name: 'Stripe',
+    logo: '💳',
+    tier: 'growth',
+    description: 'Payment infrastructure for the internet. Clean code, API design, and financial systems knowledge are key.',
+    questionCount: 15,
+    commonTopics: ['API Design', 'System Design', 'Payments', 'Security'],
+  },
+  {
+    id: 'github',
+    name: 'GitHub',
+    logo: '🐙',
+    tier: 'big-tech',
+    description: 'Developer collaboration platform (Microsoft subsidiary). Ruby on Rails, Git internals, and developer tooling.',
+    questionCount: 10,
+    commonTopics: ['Ruby on Rails', 'Git Internals', 'API Design', 'Developer Tools'],
+  },
+  {
+    id: 'airbnb',
+    name: 'Airbnb',
+    logo: '🏠',
+    tier: 'growth',
+    description: 'Travel and hospitality marketplace. System design, React, and data-driven engineering culture.',
+    questionCount: 12,
+    commonTopics: ['System Design', 'React', 'Data Engineering', 'Marketplace Design'],
+  },
+  {
+    id: 'uber',
+    name: 'Uber',
+    logo: '🚗',
+    tier: 'growth',
+    description: 'Mobility and delivery platform. Real-time systems, geospatial data, and large-scale distributed systems.',
+    questionCount: 14,
+    commonTopics: ['System Design', 'Real-Time Systems', 'Geospatial', 'Distributed Systems'],
+  },
+  {
+    id: 'spotify',
+    name: 'Spotify',
+    logo: '🎵',
+    tier: 'growth',
+    description: 'Audio streaming platform. Microservices architecture, recommendation systems, and music data processing.',
+    questionCount: 10,
+    commonTopics: ['Microservices', 'Recommendation Systems', 'Data Pipelines', 'System Design'],
+  },
+];
