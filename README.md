@@ -7,7 +7,11 @@
 A comprehensive interview preparation platform built with Next.js 16, featuring tri-provider AI coaching (OpenAI, Anthropic, Gemini), spaced repetition flashcards, mock interviews, coding challenges, progress analytics, and a gamification system — all organized by company and learning track.
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Coming_Soon-0a0a0a?style=for-the-badge&labelColor=0a0a0a&color=3b82f6)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-0a0a0a?style=for-the-badge&labelColor=0a0a0a&color=22c55e)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-0a0a0a?style=for-the-badge&labelColor=0a0a0a&color=22c55e)](LICENSE)
+[![Next.js 16](https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React 19](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
 </div>
 
@@ -182,15 +186,33 @@ npm run start
 
 ---
 
-## Author
+## Key Architecture Decisions
 
-**Mohammadhossein Asadi** — Frontend & Full-Stack Engineer
+### Unified AI Provider Abstraction
+The `lib/ai/provider.ts` creates a single interface for all three AI providers, enabling runtime switching, automatic fallback, and consistent response formatting across coaching, evaluation, and generation tasks.
 
-[![GitHub](https://img.shields.io/badge/GitHub-mohammadhossein--asadi-0a0a0a?style=flat-square&logo=github)](https://github.com/mohammadhossein-asadi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-mohammadhossein--asadi-0a66c2?style=flat-square&logo=linkedin)](https://linkedin.com/in/mohammadhossein-asadi)
+### Spaced Repetition Algorithm
+Custom implementation of the SM-2 algorithm (used by Anki) in `lib/spaced-repetition.ts` with TypeScript types for cards, reviews, and scheduling parameters.
+
+### Route Groups for Layout Separation
+Next.js 16 route groups (`(auth)`, `(marketing)`, `(dashboard)`) cleanly separate layout concerns without affecting URL structure.
+
+### Zustand Store Segmentation
+8 focused stores (auth, questions, flashcards, progress, ui, etc.) prevent unnecessary re-renders and keep state logic co-located with features.
 
 ---
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+**Mohammadhossein Asadi** — Frontend & Full-Stack Engineer
+
+[![GitHub](https://img.shields.io/badge/GitHub-mohammadhossein--asadi-0a0a0a?style=flat-square&logo=github)](https://github.com/mohammadhossein-asadi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-mohammadhossein--asadi-0a66c2?style=flat-square&logo=linkedin)](https://linkedin.com/in/mohammadhossein-asadi)
+
+</div>
