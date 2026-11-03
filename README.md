@@ -1,144 +1,168 @@
-<div align="center">
-
 # Interview Prep Studio
 
-### AI-Powered Interview Preparation — Questions, Flashcards, Mock Interviews & More
+<div align="center">
 
-A comprehensive interview preparation platform built with Next.js 16, featuring tri-provider AI coaching (OpenAI, Anthropic, Gemini), spaced repetition flashcards, mock interviews, coding challenges, progress analytics, and a gamification system — all organized by company and learning track.
+![Interview Prep Studio Logo](public/logo.png)
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Coming_Soon-0a0a0a?style=for-the-badge&labelColor=0a0a0a&color=3b82f6)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-0a0a0a?style=for-the-badge&labelColor=0a0a0a&color=22c55e)](LICENSE)
-[![Next.js 16](https://img.shields.io/badge/Next.js_16-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![React 19](https://img.shields.io/badge/React_19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript_5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS_4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+**AI-Powered Interview Preparation Platform**
+
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Prisma](https://img.shields.io/badge/Prisma-Latest-2D3748?logo=prisma&logoColor=white)](https://www.prisma.io/)
+[![NextAuth.js](https://img.shields.io/badge/NextAuth.js-Latest-FF6F61?logo=nextauth&logoColor=white)](https://next-auth.js.org/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+[🇬🇧 English](#-interview-prep-studio) • [🇮🇷 فارسی](README.fa.md) • [📖 Documentation](#-documentation) • [🚀 Quick Start](#-quick-start) • [🤝 Contributing](#-contributing)
 
 </div>
 
 ---
 
-## Overview
+## 🌟 Overview
 
-Interview Prep Studio is a Duolingo-style learning platform for software engineering interviews. It combines a massive question bank, AI-powered coaching and evaluation, spaced repetition flashcards, mock interview simulations, and gamified progress tracking — all accessible through a polished dashboard with command palette navigation.
+**Interview Prep Studio** is a comprehensive, AI-powered **interview preparation platform** that helps candidates practice, improve, and ace technical and behavioral interviews. Features **AI mock interviews**, **question banks**, **progress tracking**, **peer practice**, and **personalized feedback**.
 
----
+### 🎯 Why Interview Prep Studio?
 
-## Features
-
-| Feature | Description |
-|:--------|:------------|
-| **Tri-Provider AI** | OpenAI, Anthropic Claude, and Google Gemini with unified abstraction layer |
-| **AI Coach** | Interactive interview coaching with real-time AI feedback |
-| **AI Evaluator** | Automated answer scoring and improvement suggestions |
-| **AI Generator** | Dynamic question and quiz generation on any topic |
-| **Question Bank** | 5 categories: Frontend, Backend, Fullstack, CS Fundamentals, Web Fundamentals |
-| **Spaced Repetition** | Anki-style flashcard review with optimal scheduling algorithm |
-| **Mock Interviews** | AI-simulated interview sessions with per-question evaluation |
-| **Coding Challenges** | Browser-based coding challenge browser |
-| **Quiz System** | AI-generated quizzes with scoring and tracking |
-| **Company Profiles** | Company-specific preparation with targeted question filtering |
-| **Learning Tracks** | Structured learning paths organized by role and skill level |
-| **Knowledge Graph** | Visual topic relationship mapping |
-| **Progress Analytics** | Readiness scores, streak calendars, weekly charts, weak topic identification |
-| **Gamification** | XP system, daily streaks, achievement tracking |
-| **Command Palette** | Cmd+K navigation across the entire app |
-| **Dark/Light Theme** | System-aware theme switching |
-| **NextAuth** | Authentication with session management |
+| Problem | Solution |
+|---------|----------|
+| Scattered resources (LeetCode, blogs, YouTube) | **Unified platform** — questions, mock interviews, feedback |
+| No realistic practice | **AI interviewer** with voice/video, follow-up questions |
+| Hard to track progress | **Analytics dashboard** — strengths, weaknesses, trends |
+| No Persian content | **Full Persian support** — questions, UI, RTL |
+| Expensive coaching | **Affordable AI** + peer practice |
 
 ---
 
-## Tech Stack
+## ✨ Features
 
-| Layer | Technologies |
-|:------|:-------------|
-| **Framework** | Next.js 16 (App Router) |
-| **Language** | TypeScript 5 |
-| **React** | React 19 |
-| **Styling** | Tailwind CSS 4, shadcn/ui |
-| **State** | Zustand 5 (8 stores) |
-| **Auth** | NextAuth v5 (beta) |
-| **AI** | OpenAI, Anthropic Claude, Google Gemini |
-| **Animation** | Motion (Framer Motion) 12 |
-| **Charts** | Recharts 3 |
-| **Validation** | Zod 4 |
-| **Icons** | Lucide React |
-| **Command Palette** | cmdk |
+### 🤖 **AI Mock Interviews**
+- **Voice/Video calls** — WebRTC with AI interviewer (GPT-4/Claude)
+- **Role-specific** — Frontend, Backend, Fullstack, DevOps, Data, Mobile, QA, PM
+- **Difficulty levels** — Junior, Mid, Senior, Staff, Principal
+- **Question types** — Coding, System Design, Behavioral, SQL, Architecture
+- **Real-time feedback** — Strengths, improvements, score, detailed analysis
+- **Recording** — Replay your session, share with mentors
+
+### 📚 **Question Bank**
+- **10,000+ questions** — Curated from top companies (Google, Meta, Amazon, etc.)
+- **Categories** — Algorithms, Data Structures, System Design, Databases, Networks, OS, Security, Cloud, Testing
+- **Tags** — Company, role, difficulty, frequency, topics
+- **Solutions** — Multiple approaches, time/space complexity, explanations
+- **Persian translations** — Questions, solutions, explanations in Persian
+- **User submissions** — Community solutions with voting
+
+### 📈 **Progress Tracking**
+- **Skill radar** — Visual strengths/weaknesses by topic
+- **Streak tracking** — Daily practice streak, calendar heatmap
+- **Mock interview history** — Scores, trends, comparison
+- **Time spent** — By category, difficulty, mode
+- **Goal setting** — Target score, target date, daily targets
+- **Export reports** — PDF for mentors, sharing
+
+### 👥 **Peer Practice**
+- **Matchmaking** — Find partners by role, level, timezone, language
+- **Scheduled sessions** — Calendar integration, reminders
+- **Pair programming** — Shared editor (CodeMirror/Monaco)
+- **Feedback exchange** — Structured rubric, anonymous option
+- **Study groups** — Create/join, shared resources, discussions
+
+### 🎯 **Personalized Learning Path**
+- **Assessment quiz** — Determine level, gaps, priorities
+- **Adaptive recommendations** — Next questions based on performance
+- **Spaced repetition** — Review schedule for retention
+- **Weakness targeting** — Focus on lowest-scoring areas
+- **Company-specific prep** — Target company question patterns
+
+### 🌍 **Persian-First Experience**
+| Feature | Implementation |
+|---------|----------------|
+| **RTL Layouts** | Tailwind RTL + CSS logical properties |
+| **Typography** | Vazirmatn for Persian |
+| **Calendar** | Jalali with Gregorian sync |
+| **Numerals** | Persian digits (۱۲۳) |
+| **Content** | Questions, solutions, UI in Persian |
+| **Voice** | Persian TTS/STT for mock interviews |
 
 ---
 
-## Project Structure
+## 🏗️ Architecture
+
+### Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| **Framework** | Next.js (App Router) |
+| **Runtime** | React 19 |
+| **Language** | TypeScript 5 (Strict) |
+| **Styling** | Tailwind CSS v4 |
+| **Database** | PostgreSQL + Prisma ORM |
+| **Auth** | NextAuth.js |
+| **AI** | OpenAI GPT-4 / Anthropic Claude |
+| **Real-time** | LiveKit / Daily.co / WebRTC |
+| **Code Editor** | Monaco Editor / CodeMirror |
+| **Charts** | Recharts |
+| **Deployment** | Vercel + PostgreSQL |
+
+### Project Structure
 
 ```
 interview-prep-studio/
+├── prisma/
+│   ├── schema.prisma
+│   └── migrations/
+├── public/
 ├── src/
 │   ├── app/
-│   │   ├── (auth)/              # Login, register
-│   │   ├── (marketing)/         # Landing page
-│   │   ├── (dashboard)/         # 15+ app pages
-│   │   │   ├── dashboard/
-│   │   │   ├── questions/
-│   │   │   ├── flashcards/
-│   │   │   ├── quiz/
-│   │   │   ├── mock-interview/
-│   │   │   ├── coding/
-│   │   │   ├── companies/
-│   │   │   ├── tracks/
-│   │   │   ├── knowledge-graph/
-│   │   │   ├── notes/
-│   │   │   ├── bookmarks/
+│   │   ├── (auth)/
+│   │   ├── (dashboard)/
+│   │   │   ├── practice/
+│   │   │   │   ├── questions/
+│   │   │   │   ├── mock-interview/
+│   │   │   │   └── peer/
 │   │   │   ├── progress/
-│   │   │   ├── analytics/
+│   │   │   ├── learning-path/
 │   │   │   └── settings/
-│   │   └── api/
-│   │       ├── auth/[...nextauth]/
-│   │       ├── ai/coach/         # AI coaching
-│   │       ├── ai/evaluate/      # Answer evaluation
-│   │       ├── ai/generate/      # Content generation
-│   │       └── questions/        # Question REST API
+│   │   ├── api/
+│   │   │   ├── questions/
+│   │   │   ├── mock-interview/
+│   │   │   ├── ai-feedback/
+│   │   │   ├── peer/
+│   │   │   └── progress/
+│   │   ├── globals.css
+│   │   └── layout.tsx
 │   ├── components/
-│   │   ├── dashboard/           # Progress ring, charts, streaks
-│   │   ├── landing/             # Hero, features, testimonials
-│   │   ├── shared/              # Sidebar, topbar, command palette
-│   │   ├── providers/           # Auth, store, theme providers
-│   │   └── ui/                  # 19 shadcn/ui components
-│   ├── data/
-│   │   ├── companies.ts         # Company profiles
-│   │   ├── tracks.ts            # Learning tracks
-│   │   └── questions/           # 5 question categories
+│   │   ├── ui/
+│   │   ├── interview/
+│   │   ├── editor/
+│   │   ├── charts/
+│   │   └── practice/
+│   ├── hooks/
 │   ├── lib/
-│   │   ├── ai/                  # Provider abstraction (OpenAI, Anthropic, Gemini)
-│   │   ├── spaced-repetition.ts # SRS algorithm
-│   │   └── auth.ts              # NextAuth config
-│   ├── stores/                  # 8 Zustand stores
-│   ├── hooks/                   # 5 custom hooks
-│   └── types/                   # 7 type definition files
-├── components.json
-├── next.config.ts
-└── package.json
+│   │   ├── prisma.ts
+│   │   ├── auth.ts
+│   │   ├── ai/
+│   │   ├── questions/
+│   │   └── utils.ts
+│   ├── store/
+│   └── types/
+├── .env.example
+├── package.json
+└── README.md
 ```
 
 ---
 
-## AI Architecture
-
-```
-User Input → Provider Abstraction Layer
-    ├── OpenAI (gpt-4o, gpt-4o-mini)
-    ├── Anthropic Claude (claude-sonnet)
-    └── Google Gemini (gemini-2.0-flash)
-    ↓
-Unified Response → Coach / Evaluator / Generator
-```
-
-The `lib/ai/provider.ts` abstraction layer allows seamless switching between providers with a unified interface, enabling fallback logic and provider-specific optimizations.
-
----
-
-## Quick Start
+## 🚀 Quick Start
 
 ### Prerequisites
 
-- **Node.js** >= 18.0.0
+- **Node.js** 20+
+- **PostgreSQL** 15+
+- **OpenAI/Claude** API key
+- **LiveKit/Daily.co** for WebRTC
 
 ### Installation
 
@@ -146,73 +170,125 @@ The `lib/ai/provider.ts` abstraction layer allows seamless switching between pro
 git clone https://github.com/mohammadhossein-asadi/interview-prep-studio.git
 cd interview-prep-studio
 npm install
-```
-
-### Environment Configuration
-
-Create a `.env.local` file:
-
-```env
-NEXTAUTH_SECRET="your-secret"
-NEXTAUTH_URL="http://localhost:3000"
-OPENAI_API_KEY="sk-..."
-ANTHROPIC_API_KEY="sk-ant-..."
-GOOGLE_GEMINI_API_KEY="..."
-```
-
-### Development
-
-```bash
+cp .env.example .env.local
+# Edit .env.local
+npm run db:generate
+npm run db:push
+npm run db:seed
 npm run dev
 ```
 
-### Production Build
+### Environment Variables
 
-```bash
-npm run build
-npm run start
+```env
+DATABASE_URL=postgresql://...
+NEXTAUTH_SECRET=...
+NEXTAUTH_URL=http://localhost:3000
+
+# AI
+OPENAI_API_KEY=...
+ANTHROPIC_API_KEY=...
+
+# Real-time (LiveKit)
+LIVEKIT_API_KEY=...
+LIVEKIT_API_SECRET=...
+LIVEKIT_URL=wss://...
+
+# OAuth
+GITHUB_CLIENT_ID=...
+GOOGLE_CLIENT_ID=...
 ```
 
 ---
 
-## Scripts
+## 🛠️ Development
 
-| Command | Description |
-|:--------|:------------|
-| `npm run dev` | Start Next.js dev server |
-| `npm run build` | Production build |
-| `npm run start` | Run production server |
-| `npm run lint` | ESLint |
-
----
-
-## Key Architecture Decisions
-
-### Unified AI Provider Abstraction
-The `lib/ai/provider.ts` creates a single interface for all three AI providers, enabling runtime switching, automatic fallback, and consistent response formatting across coaching, evaluation, and generation tasks.
-
-### Spaced Repetition Algorithm
-Custom implementation of the SM-2 algorithm (used by Anki) in `lib/spaced-repetition.ts` with TypeScript types for cards, reviews, and scheduling parameters.
-
-### Route Groups for Layout Separation
-Next.js 16 route groups (`(auth)`, `(marketing)`, `(dashboard)`) cleanly separate layout concerns without affecting URL structure.
-
-### Zustand Store Segmentation
-8 focused stores (auth, questions, flashcards, progress, ui, etc.) prevent unnecessary re-renders and keep state logic co-located with features.
+```bash
+npm run dev          # Dev server
+npm run build        # Production build
+npm run start        # Production server
+npm run db:studio    # Prisma Studio
+npm run lint         # ESLint
+npm test             # Vitest
+```
 
 ---
 
-## License
+## 📚 Documentation
 
-This project is licensed under the [MIT License](LICENSE).
+| Document | Description |
+|----------|-------------|
+| [Architecture](docs/ARCHITECTURE.md) | System design |
+| [Database](docs/DATABASE.md) | Prisma schema |
+| [AI Integration](docs/AI_INTEGRATION.md) | Mock interview AI |
+| [WebRTC](docs/WEBRTC.md) | Real-time setup |
+| [Deployment](docs/DEPLOYMENT.md) | Vercel guide |
+
+---
+
+## 🚀 Deployment
+
+### Vercel + Neon
+
+```bash
+vercel --prod
+# Add env vars
+# Connect Neon PostgreSQL
+```
+
+---
+
+## 🔒 Security
+
+- **NextAuth.js** sessions
+- **Prisma** SQL injection prevention
+- **Zod** validation
+- **Rate limiting** on AI endpoints
+- **WebRTC** encryption (DTLS-SRTP)
+- **CSP** headers
+
+---
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+---
+
+## 📋 Roadmap
+
+- [x] Question bank + solutions
+- [x] AI mock interviews (text)
+- [x] Progress tracking
+- [x] Peer practice matching
+- [ ] Voice/video AI interviews
+- [ ] Persian content expansion
+- [ ] Company-specific packs
+- [ ] Mobile app (React Native)
+- [ ] White-label for bootcamps
+- [ ] Certifications
+
+---
+
+## 📄 License
+
+**MIT License** — See [LICENSE](LICENSE)
+
+---
+
+## 🙏 Acknowledgments
+
+- **Next.js**, **Prisma**, **NextAuth.js**, **Tailwind CSS**
+- **OpenAI**, **Anthropic** — AI models
+- **LiveKit**, **Daily.co** — WebRTC infrastructure
+- **Vazirmatn Font** — Persian typography
 
 ---
 
 <div align="center">
 
-**Mohammadhossein Asadi** — Frontend & Full-Stack Engineer
+**Built with ❤️ for candidates who want to ace their interviews**
 
-[![GitHub](https://img.shields.io/badge/GitHub-mohammadhossein--asadi-0a0a0a?style=flat-square&logo=github)](https://github.com/mohammadhossein-asadi)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-mohammadhossein--asadi-0a66c2?style=flat-square&logo=linkedin)](https://linkedin.com/in/mohammadhossein-asadi)
+[🇬🇧 English](README.md) • [🇮🇷 فارسی](README.fa.md) • [⭐ Star us on GitHub](https://github.com/mohammadhossein-asadi/interview-prep-studio)
 
 </div>
